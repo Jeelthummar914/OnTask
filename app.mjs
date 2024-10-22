@@ -4,7 +4,6 @@ import path from 'path';
 import mysql from 'mysql2';
 import dotenv from 'dotenv';
 
-// Load environment variables
 dotenv.config();
 
 // Database Connection
@@ -18,7 +17,7 @@ connection.connect((err) => {
   console.log('Connected to the database as ID', connection.threadId);
 });
 
-// Example query to verify connection
+//to verify connection with the Database 
 connection.query('SELECT 1', (err, results) => {
   if (err) {
     console.error('Query error:', err.stack);
@@ -69,5 +68,4 @@ server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });
 
-// Close the connection when done
 connection.end();
