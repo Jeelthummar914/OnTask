@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav a {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    color: rgb(5, 4, 4);
+    text-decoration: none;
+    float: left;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    width: 200px;
+    padding-right: 20px;
+}
+
+aside button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    flex-grow: 1;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+.recents, .agenda, .work {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(248, 228, 201);
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tasks ul, .recents ul, .work ul {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+.align {
+    margin: left;
+    width: 60%;
+    border: 0px solid #73AD21;
+    padding: 10px;
+}
